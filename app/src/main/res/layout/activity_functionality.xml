@@ -9,4 +9,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.fvosb.dumpsterfire.FunctionalityActivity">
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Schedule"
+        android:id="@+id/viewScheduleButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Reservation"
+        android:id="@+id/makeReservationButton"
+        android:layout_below="@+id/viewScheduleButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Reservation"
+        android:id="@+id/updateReservationButton"
+        android:layout_below="@+id/makeReservationButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Reservation"
+        android:id="@+id/cancelReservationButton"
+        android:layout_below="@+id/updateReservationButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Review"
+        android:id="@+id/giveReviewButton"
+        android:layout_below="@+id/cancelReservationButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add School Info"
+        android:id="@+id/addSchoolInfoButton"
+        android:layout_below="@+id/giveReviewButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/addSchoolInfoButton"
+        android:layout_toEndOf="@+id/addSchoolInfoButton"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Choose Functionality"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
