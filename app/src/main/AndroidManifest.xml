@@ -22,7 +22,8 @@
         <activity android:name=".activities.PopulatedScheduleActivity" />
         <activity android:name=".activities.ViewScheduleActivity" />
         <activity android:name=".activities.TravelExtrasActivity" />
-        <activity android:name=".activities.PaymentInformationActivity"></activity>
+        <activity android:name=".activities.PaymentInformationActivity" />
+        <activity android:name=".activities.AddSchoolInfoActivity"></activity>
     </application>
 
 </manifest>
