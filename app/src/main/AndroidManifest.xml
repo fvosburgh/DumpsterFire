@@ -20,7 +20,8 @@
         <activity android:name=".activities.RegistrationActivity" />
         <activity android:name=".activities.SelectDepartureActivity" />
         <activity android:name=".activities.PopulatedScheduleActivity" />
-        <activity android:name=".activities.TravelExtrasActivity"></activity>
+        <activity android:name=".activities.TravelExtrasActivity" />
+        <activity android:name=".activities.MakeReservationActivity"></activity>
     </application>
 
 </manifest>

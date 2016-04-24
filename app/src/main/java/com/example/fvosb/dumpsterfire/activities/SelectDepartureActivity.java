@@ -127,7 +127,7 @@ public class SelectDepartureActivity extends AppCompatActivity {
 
         public TableRadioListener(String key, String data) {
             this.key = key;
-            this.data = data;
+            this.data = data.replace("$", "");
         }
 
         @Override

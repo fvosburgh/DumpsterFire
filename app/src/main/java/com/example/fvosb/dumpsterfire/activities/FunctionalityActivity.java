@@ -36,6 +36,7 @@ public class FunctionalityActivity extends AppCompatActivity {
                 makeReservation(v);
             }
         });
+
     }
 
     public void logout(View v) {
