@@ -6,19 +6,18 @@ import java.util.HashMap;
 public class Reservation {
 
     // use hash map for backing data structure
-    private HashMap<String, String> data;
+    private HashMap<String, String> reservationData = new HashMap<>();
 
     // null constructor
     public Reservation() {
-
     }
 
     public void add(String key, String value) {
-        data.put(key, value);
+        reservationData.put(key, value);
     }
 
     public String get(String key) {
-        return data.get(key);
+        return reservationData.get(key);
     }
 
 
