@@ -82,4 +82,5 @@ public class SearchTrainActivity extends AppCompatActivity implements AdapterVie
 
         startActivity(new Intent(this, SelectDepartureActivity.class));
     }
+
 }
