@@ -54,7 +54,7 @@
                 <Spinner
                     android:layout_width="185dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner" />
+                    android:id="@+id/travelExtrasSpinner" />
             </LinearLayout>
 
             <LinearLayout
@@ -97,8 +97,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button" />
+                android:text="Back"
+                android:id="@+id/travelExtrasBackButton" />
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -108,8 +108,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button2" />
+                android:text="Next"
+                android:id="@+id/travelExtrasNextButton" />
 
         </LinearLayout>
 

@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.fvosb.dumpsterfire.R;
+import com.example.fvosb.dumpsterfire.models.User;
+import com.example.fvosb.dumpsterfire.models.UserManager;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -41,6 +43,8 @@ public class LoginActivity extends AppCompatActivity {
         String password = passwordText.getText().toString();
 
         if(username.equals("test") && password.equals("password")) {
+            User user = new User(username);
+            UserManager.setCurrentUser(user);
             startActivity(new Intent(this, FunctionalityActivity.class));
         }
     }

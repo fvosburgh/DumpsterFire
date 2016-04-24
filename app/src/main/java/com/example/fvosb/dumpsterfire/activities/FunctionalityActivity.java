@@ -20,7 +20,8 @@ public class FunctionalityActivity extends AppCompatActivity {
         Button updateReservation = (Button) findViewById(R.id.updateReservationButton);
         Button cancelReservation = (Button) findViewById(R.id.cancelReservationButton);
         Button giveReview = (Button) findViewById(R.id.giveReviewButton);
-        final Button addSchoolInfo = (Button) findViewById(R.id.addSchoolInfoButton);
+        Button addSchoolInfo = (Button) findViewById(R.id.addSchoolInfoButton);
+        Button viewReview = (Button) findViewById(R.id.viewReviewButton);
         Button logout = (Button) findViewById(R.id.logoutButton);
 
         viewSchedule.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +51,13 @@ public class FunctionalityActivity extends AppCompatActivity {
                 addSchoolInfo(v);
             }
         });
+
+        viewReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewReview(v);
+            }
+        });
     }
 
     public void viewSchedule(View v) {
@@ -67,5 +75,9 @@ public class FunctionalityActivity extends AppCompatActivity {
 
     public void addSchoolInfo(View v) {
         startActivity(new Intent(this, AddSchoolInfoActivity.class));
+    }
+
+    public void viewReview(View v) {
+        startActivity(new Intent(this, ViewReviewActivity.class));
     }
 }

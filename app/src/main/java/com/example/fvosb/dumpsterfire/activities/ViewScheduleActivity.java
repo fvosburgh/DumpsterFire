@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.fvosb.dumpsterfire.R;
+import com.example.fvosb.dumpsterfire.models.TrainManager;
 
 public class ViewScheduleActivity extends AppCompatActivity {
 
@@ -26,6 +28,11 @@ public class ViewScheduleActivity extends AppCompatActivity {
     }
 
     public void scheduleSearch(View view) {
+        EditText trainNumber = (EditText) findViewById(R.id.ViewScheduleTrainNumber);
+        String trainNumberString = trainNumber.getText().toString();
+
+        TrainManager.getCurrTrain().setTrainNumber(trainNumberString);
+        
         startActivity(new Intent(this, PopulatedScheduleActivity.class));
     }
 }

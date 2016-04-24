@@ -23,6 +23,7 @@ public class SearchTrainActivity extends AppCompatActivity implements AdapterVie
     public String arriveString;
     public String date;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +52,7 @@ public class SearchTrainActivity extends AppCompatActivity implements AdapterVie
                 search(v);
             }
         });
+
     }
 
     public void onItemSelected(AdapterView<?> parent, View v, int pos, long id){

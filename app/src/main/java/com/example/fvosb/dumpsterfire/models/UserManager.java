@@ -2,17 +2,17 @@ package com.example.fvosb.dumpsterfire.models;
 
 public class UserManager {
 
-    private static String currUser;
+    private static User currUser;
 
-    public UserManager(String user) {
+    public UserManager(User user) {
         currUser = user;
     }
 
-    public static void setCurrentUser(String user) {
+    public static void setCurrentUser(User user) {
         currUser = user;
     }
 
-    public static String getCurrrentUser() {
+    public static User getCurrrentUser() {
         return currUser;
     }
 }
