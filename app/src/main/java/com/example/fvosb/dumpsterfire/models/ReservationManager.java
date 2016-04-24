@@ -5,11 +5,10 @@ import java.util.HashMap;
 
 public class ReservationManager {
 
-    private static HashMap<String, Reservation> reservations;
-    private static Reservation currentReservation;
+    private static HashMap<String, Reservation> reservations = new HashMap<>();
+    private static Reservation currentReservation = new Reservation();
 
     public ReservationManager() {
-        reservations = null;
     }
 
     public static void addResrvation(Reservation r) {
@@ -18,5 +17,9 @@ public class ReservationManager {
 
     public static void setCurrentReservation(Reservation r) {
         currentReservation = r;
+    }
+
+    public static Reservation getCurrentReservation() {
+        return currentReservation;
     }
 }

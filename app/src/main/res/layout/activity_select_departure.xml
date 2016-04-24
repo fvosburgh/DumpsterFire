@@ -9,4 +9,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.fvosb.dumpsterfire.activities.SelectDepartureActivity">
 
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="403dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:id="@+id/selectDepartureTable"></TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:id="@+id/selectDepartureBackButton" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.93"></LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/selectDepartureNextButton" />
+
+        </LinearLayout>
+    </GridLayout>
 </RelativeLayout>
