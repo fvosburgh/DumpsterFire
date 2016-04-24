@@ -17,10 +17,18 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Button loginButton = (Button) findViewById(R.id.loginButton);
+        Button registerButton = (Button) findViewById(R.id.RegisterButton);
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login(v);
+            }
+        });
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                register(v);
             }
         });
     }
@@ -35,5 +43,9 @@ public class LoginActivity extends AppCompatActivity {
         if(username.equals("test") && password.equals("password")) {
             startActivity(new Intent(this, FunctionalityActivity.class));
         }
+    }
+
+    public void register(View view) {
+        startActivity(new Intent(this, RegistrationActivity.class));
     }
 }
