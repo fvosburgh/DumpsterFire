@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DumpsterFire</string>
+    <string-array name="train_stations">
+        <item>depart1</item>
+        <item>depart2</item>
+        <item>depart3</item>
+        <item>depart4</item>
+    </string-array>
 </resources>

@@ -1,7 +1,9 @@
-package com.example.fvosb.dumpsterfire;
+package com.example.fvosb.dumpsterfire.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.fvosb.dumpsterfire.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 

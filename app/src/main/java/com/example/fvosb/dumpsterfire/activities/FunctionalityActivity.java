@@ -1,10 +1,12 @@
-package com.example.fvosb.dumpsterfire;
+package com.example.fvosb.dumpsterfire.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.fvosb.dumpsterfire.R;
 
 public class FunctionalityActivity extends AppCompatActivity {
 
@@ -27,10 +29,21 @@ public class FunctionalityActivity extends AppCompatActivity {
                 logout(v);
             }
         });
+
+        makeReservation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                makeReservation(v);
+            }
+        });
     }
 
     public void logout(View v) {
         // member manager maybe
         startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void makeReservation(View v) {
+        startActivity(new Intent(this, SearchTrainActivity.class));
     }
 }
