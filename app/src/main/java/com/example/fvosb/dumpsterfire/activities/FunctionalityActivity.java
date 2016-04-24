@@ -23,6 +23,13 @@ public class FunctionalityActivity extends AppCompatActivity {
         Button addSchoolInfo = (Button) findViewById(R.id.addSchoolInfoButton);
         Button logout = (Button) findViewById(R.id.logoutButton);
 
+        viewSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewSchedule(v);
+            }
+        });
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +43,10 @@ public class FunctionalityActivity extends AppCompatActivity {
                 makeReservation(v);
             }
         });
+    }
+
+    public void viewSchedule(View v) {
+        startActivity(new Intent(this, ViewScheduleActivity.class));
     }
 
     public void logout(View v) {
