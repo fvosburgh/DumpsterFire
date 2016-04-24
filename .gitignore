@@ -23,12 +23,19 @@ Thumbs.db
 .DS_Store
 
 # Eclipse project files
+/.idea
 .classpath
 .project
 
 # Android Studio
 *.iml
 .idea/
+/.gradle
+/build
+/gen
+/DumpsterFire.iml
+/local.properties
+/app/app.iml
 .navigation
 
 #.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
